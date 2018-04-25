@@ -116,7 +116,7 @@ To add one or more optional addenda records to an entry
 var addenda = new nach.EntryAddenda({
     paymentRelatedInformation: "0123456789ABCDEFGJIJKLMNOPQRSTUVWXYXabcdefgjijklmnopqrstuvwxyx"
 });
-entry.addAdenda(addenda);
+entry.addAddenda(addenda);
 ```
 
 Entries are added to batches like so
@@ -135,7 +135,7 @@ Finally to generate the file & write it to a text file
 
 ```js
 // Generate the file (result is a string with the file contents)
-file.generateFile(function(result) {
+file.generateFile(function(err, result) {
 
     // Write result to a NACHA.txt file
     fs.writeFile('NACHA.txt', result, function(err) {
@@ -144,6 +144,15 @@ file.generateFile(function(result) {
         // Log the output
         console.log(fileString);
     });
+});
+```
+
+Or you can use internal write method  
+
+```js
+// Generate the file (result is a string with the file contents)
+file.writeFile('./nach.txt', function(err) {
+    console.log('File writed');
 });
 ```
 
