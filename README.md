@@ -1,8 +1,8 @@
-# nACH2
+# NODE-nACH
 
-[![npm](https://img.shields.io/npm/v/nach2.svg?maxAge=2592000)](https://www.npmjs.com/package/nach2)
-[![Travis](https://img.shields.io/travis/glenselle/nACH.svg?maxAge=2592000)](https://travis-ci.org/glenselle/nACH)
-[![Dependencies](https://david-dm.org/zipline/nACH.svg)](https://david-dm.org/zipline/nACH)
+[![npm](https://img.shields.io/npm/v/nach2.svg?maxAge=2592000)](https://www.npmjs.com/package/node-nach)
+[![Travis](https://img.shields.io/travis/glenselle/nACH.svg?maxAge=2592000)](https://travis-ci.org/wilix-team/node-nach)
+[![Dependencies](https://david-dm.org/wilix-team/node-nach.svg)](https://david-dm.org/wilix-team/node-nach)
 
 nACH is a Node.js module exposing both a high & low-level API for generating ACH (Automated Clearing House) files for use within the ACH network. It's design makes it a high-performance, dependable and frustration-free solution for developers.
 
@@ -11,12 +11,12 @@ nACH is a Node.js module exposing both a high & low-level API for generating ACH
 ## Getting Started
 To intall nACH, use NPM:
 
-    $ npm i nach2 --save-dev
+    $ npm i node-nach --save-dev
 
 Then include the NPM module like so:
 
 ```js
-const nach = require('nach2')
+const nach = require('node-nach')
 ```
 
 Now you're ready to start creating ACH files.

@@ -1,13 +1,18 @@
 {
-  "name": "nach2",
+  "name": "node-nach",
   "description": "nACH is a highly customizable Node.js module exposing a high & low-level API for generating ACH files for use within the ACH network",
-  "version": "0.5.1",
+  "version": "0.6.0",
   "keywords": [
     "ACH",
     "file",
-    "Automated Clearing House"
+    "Automated Clearing House",
+    "NACH"
   ],
   "contributors": [
+    {
+      "name": "Aloyan Dmitry",
+      "email": "root@wilix.org"
+    },
     {
       "name": "Glen Selle",
       "email": "glenselle@me.com"
@@ -24,7 +29,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/zipline/nACH.git"
+    "url": "https://github.com/wilix-team/node-nach.git"
   },
   "engines": {
     "node": ">= 0.10.0"
