@@ -22,5 +22,18 @@ describe('Parse', function() {
         done()
       })
     });
+
+    it('should parse Addenda successfully with promise', function(done) {
+      File
+        .parseFile(__dirname + '/nach-valid-addenda.txt')
+        .then(file => {
+          expect(file).not.equal(null);
+          expect(file).not.equal(undefined);
+          done()
+        })
+        .catch(err => {
+          throw err;
+        });
+    });
   });
 });
