@@ -36,7 +36,7 @@ describe('Entry', function() {
         traceNumber: '000000001234567'
       });
       var addenda = new EntryAddenda({
-        paymentRelatedInformation: "3456789ABCDEFGJIJKLMNOPQRSTUVWXYXabcdefgjijklmnopqrstuvwxyx"
+        paymentRelatedInformation: "0123456789ABCDEFGJIJKLMNOPQRSTUVWXYXabcdefgjijklmnopqrstuvwxyx"
       });
       expect(entry.getRecordCount()).to.equal(1);
       entry.addAddenda(addenda);

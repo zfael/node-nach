@@ -19,14 +19,6 @@ describe('Parse', function() {
         if (err) throw err;
         expect(file).not.equal(null);
         expect(file).not.equal(undefined);
-        file.getBatches().forEach(batch => {
-          batch.getEntries().forEach(entry => {
-            entry.getAddendas().forEach(addenda => {
-              expect(addenda.getReturnCode()).equal('R14')
-            })
-          })
-        })
-        expect(file).not.equal(undefined);
         done()
       })
     });
